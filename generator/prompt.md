@@ -66,7 +66,7 @@ Prefer: local newspapers, Utility Dive, Canary Media, E&E News, Inside Climate N
 
 Write to `/{{MMDDYY}}.html` using `assets/css/brief.css`. Reuse the structure of `050926.html` (Volume 0):
 
-- `.masthead` with logo, H1 "RenUSA Leadership Brief," `.vol` line "Volume {{VOLUME}} · {{TODAY_FULL}}"
+- `.masthead` with `<img src="assets/img/renusa-logo-light.svg">` (white-wordmark version, reads on navy), H1 "RenUSA Leadership Brief," `.vol` line "Volume {{VOLUME}} · {{TODAY_FULL}}"
 - `.body` with greeting → 2–3 paragraph editorial open
 - `<section class="section">` blocks with `<div class="section-head">` headers
 - `.story` for deep dives, with `<h2>` headline, body paragraphs, and `.takeaway` callout
