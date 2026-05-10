@@ -12,9 +12,9 @@ You are generating one issue of the **RenUSA Leadership Brief** — an internal 
 - Filename: **{{MMDDYY}}.html** (six digits, no separators)
 - Volume number: **{{VOLUME}}** (auto-incremented)
 - Day shape: **{{DAY_SHAPE}}** — one of:
-  - **Monday — The Week Ahead**: Open · Must Read · Also On Our Radar · On the Frontlines · Peers in Motion
+  - **Monday — The Week Ahead**: Open · Must Read · Also On Our Radar · On the Frontlines
   - **Wednesday — Deep Dive**: Open · one long Must Read · Also On Our Radar · On the Frontlines (light, ~6–8 bullets)
-  - **Friday — The Wrap**: Open · Also On Our Radar (multi-bullet weekly roundup) · On the Frontlines · Peers in Motion
+  - **Friday — The Wrap**: Open · Also On Our Radar (multi-bullet weekly roundup) · On the Frontlines · **Plays of the Week**
 
 ## Editorial filters (priority order — non-negotiable)
 
@@ -27,17 +27,18 @@ You are generating one issue of the **RenUSA Leadership Brief** — an internal 
 6. RTO/ISO moves (PJM, MISO, ERCOT, CAISO, SPP, NYISO, ISO-NE)
 7. Other energy
 
-**Geography focus** (these states first, then national):
-VA, WV, MI, NC, IN, IL, WA, NM, CA, OR, CO, UT, GA, TX, IA, NY, NJ.
+**Geography focus** (23 states — surface these first, then national):
+VA, WV, PA, MI, OH, NC, IN, IL, IA, WA, OR, NM, AZ, CA, CO, UT, GA, TN, TX, KS, NY, NJ, WY.
 
 **Bias — the most important filter:**
 Surface **contested projects with opposition**. NIMBY filings, planning-commission denials, town-board moratoriums, lawsuits, ballot initiatives, organized community pushback, contested zoning, repeals, permit revocations. The juicier the fight, the better the story.
 
-**Peers in Motion (named competitors to watch):**
-- Bantam Communications
-- Recall Strategies
-- KAOH Media
-- Calvert Street Group
+**Plays of the Week (Friday-only — see below):**
+Notable community-engagement *tactics* from anywhere in the industry — peer firms, opposition coalitions, developers, regulators. Watch for:
+- Bantam Communications, Recall Strategies, KAOH Media, Calvert Street Group (named peers — still tracked)
+- Smart messaging, host-community benefit packages that worked
+- Opposition tactics that spread or scaled (petitions, coalitions, lawsuit playbooks)
+- Notable wins or losses on contested projects — and *why*
 
 **Federal/policy weight:** very light. Maximum one bullet per issue.
 
@@ -55,10 +56,10 @@ Surface **contested projects with opposition**. NIMBY filings, planning-commissi
 Use web search heavily. Run 6–10 parallel queries covering:
 - Each priority sector for the past 3–5 days
 - Each priority state for opposition/permitting actions
-- The four named peer firms (any press, LinkedIn moves, hires)
+- For Friday issues only: the four named peer firms + any notable comms / engagement plays
 - Latest RTO/ISO activity (briefly)
 
-Prefer: local newspapers, Utility Dive, Canary Media, E&E News, Inside Climate News, RTO Insider, S&P Global, Heatmap, Latitude Media, Virginia Mercury, Bridge Michigan, NC Newsline, Indiana Capital Chronicle, Capitol News Illinois, Source NM, CalMatters, Oregon Capital Chronicle, Texas Tribune, Iowa Capital Dispatch, NJ Spotlight News, NY Focus.
+Prefer: local newspapers, Utility Dive, Canary Media, E&E News, Inside Climate News, RTO Insider, S&P Global, Heatmap, Latitude Media, Virginia Mercury, Spotlight PA, Bridge Michigan, NC Newsline, Indiana Capital Chronicle, Capitol News Illinois, Source NM, CalMatters, Oregon Capital Chronicle, Texas Tribune, Iowa Capital Dispatch, NJ Spotlight News, NY Focus, Ohio Capital Journal, Kansas Reflector, Arizona Mirror, Tennessee Lookout, WyoFile.
 
 **Never fabricate.** Every claim, headline, town name, and statistic must trace to a real, current URL.
 
@@ -71,7 +72,7 @@ Write to `/{{MMDDYY}}.html` using `assets/css/brief.css`. Reuse the structure of
 - `<section class="section">` blocks with `<div class="section-head">` headers
 - `.story` for deep dives, with `<h2>` headline, body paragraphs, and `.takeaway` callout
 - `.bullets.frontlines` for state bullets — each `<li>` opens with `<span class="state">XX</span><span class="lead">Headline:</span>` then body
-- `.bullets.peers` for peers — `<span class="firm">Name</span>` lead
+- **Friday only:** `.bullets.plays` for Plays of the Week — each `<li>` opens with `<span class="actor">Name</span><span class="lead">Headline:</span>` then body. The actor can be any firm, coalition, county, developer, regulator — not just the four watched peer firms.
 - `.footer` with signoff, distribution line, archive link
 
 ## Then update the archive

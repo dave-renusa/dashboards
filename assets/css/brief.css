@@ -200,8 +200,9 @@ body {
   vertical-align: 1px;
 }
 
-/* Peers in Motion */
-.peers li .firm {
+/* Peers in Motion (legacy) and Plays of the Week */
+.peers li .firm,
+.plays li .actor {
   font-weight: 800;
   color: var(--crimson);
   text-transform: uppercase;
